@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SignIn-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SignInVC" customModule="UverBus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0eu-Sb-a04" customClass="GIDSignInButton">
+                                <rect key="frame" x="67" y="314" width="240" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="SignIn" id="DYw-K4-ql1"/>
+                    <connections>
+                        <segue destination="Gsh-pm-u1E" kind="show" identifier="skipSignIn" id="Fkr-DD-2SS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1855" y="105"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="13Z-oD-afh">
+            <objects>
+                <viewController title="Home" id="Nxn-Zs-jVJ" customClass="HomeVC" customModule="UverBus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g7Z-ZT-oC6" customClass="MGLMapView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P03-uT-FrZ">
+                                <rect key="frame" x="303" y="120" width="56" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="LdO-Wm-nTN"/>
+                                    <constraint firstAttribute="height" constant="47" id="arV-LR-PQL"/>
+                                </constraints>
+                                <state key="normal" title="Follow Bus" image="busIcon.png"/>
+                                <connections>
+                                    <action selector="followBusClicked:" destination="Nxn-Zs-jVJ" eventType="touchUpInside" id="5Kk-iJ-HIy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ba9-PQ-Ujy">
+                                <rect key="frame" x="16" y="120" width="41" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="41" id="2Ru-Ao-Zeo"/>
+                                    <constraint firstAttribute="height" constant="42" id="V6h-Wc-IXK"/>
+                                </constraints>
+                                <state key="normal" title="Follow User" image="userIcon.png"/>
+                                <connections>
+                                    <action selector="followUserClicked:" destination="Nxn-Zs-jVJ" eventType="touchUpInside" id="rAv-qh-0Pk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ba9-PQ-Ujy" firstAttribute="leading" secondItem="g7Z-ZT-oC6" secondAttribute="leadingMargin" id="5Uz-mQ-GqI"/>
+                            <constraint firstItem="P03-uT-FrZ" firstAttribute="top" secondItem="Vh2-ve-FTO" secondAttribute="top" constant="56" id="M52-5U-Cow"/>
+                            <constraint firstItem="P03-uT-FrZ" firstAttribute="trailing" secondItem="g7Z-ZT-oC6" secondAttribute="trailingMargin" id="SH1-wg-Fy3"/>
+                            <constraint firstItem="Vh2-ve-FTO" firstAttribute="bottom" secondItem="ba9-PQ-Ujy" secondAttribute="bottom" constant="505" id="SSe-CO-zEj"/>
+                            <constraint firstItem="P03-uT-FrZ" firstAttribute="top" secondItem="ba9-PQ-Ujy" secondAttribute="top" id="XQy-OH-mfO"/>
+                            <constraint firstItem="Vh2-ve-FTO" firstAttribute="bottom" secondItem="P03-uT-FrZ" secondAttribute="bottom" constant="500" id="dLh-NB-FOw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vh2-ve-FTO"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="a3x-nG-BcW"/>
+                    <connections>
+                        <outlet property="mapView" destination="g7Z-ZT-oC6" id="Suk-6m-bRE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dAZ-Xv-vMP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1472.8" y="104.7976011994003"/>
+        </scene>
+        <!--Nav-->
+        <scene sceneID="vnV-6M-TuK">
+            <objects>
+                <navigationController storyboardIdentifier="Nav" title="Nav" id="Gsh-pm-u1E" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="I1y-F6-cEc">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.01150551159" green="0.74399846790000002" blue="0.65542918439999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Nxn-Zs-jVJ" kind="relationship" relationship="rootViewController" id="YIa-1E-glN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aPq-Dn-0UR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-591" y="105"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="busIcon.png" width="512" height="512"/>
+        <image name="userIcon.png" width="512" height="512"/>
+    </resources>
+</document>

@@ -1,0 +1,810 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B6EA7F1DDE3767F027842EF /* Pods_UverBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED32FFFAC4F0FF688DC44728 /* Pods_UverBus.framework */; };
+		530800C3220257E900925C33 /* userIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 530800C2220257E900925C33 /* userIcon.png */; };
+		530800C52202589600925C33 /* busIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 530800C42202589600925C33 /* busIcon.png */; };
+		530E6ED521FE88AC007EDF3B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530E6ED421FE88AC007EDF3B /* HomeVC.swift */; };
+		530E6ED721FED620007EDF3B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530E6ED421FE88AC007EDF3B /* HomeVC.swift */; };
+		530E6ED821FED621007EDF3B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530E6ED421FE88AC007EDF3B /* HomeVC.swift */; };
+		530E6ED921FED62A007EDF3B /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A8168421F8DC83000D9DED /* SignInVC.swift */; };
+		530E6EDA21FED62A007EDF3B /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A8168421F8DC83000D9DED /* SignInVC.swift */; };
+		53A8168321F8DC83000D9DED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A8168221F8DC83000D9DED /* AppDelegate.swift */; };
+		53A8168521F8DC83000D9DED /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A8168421F8DC83000D9DED /* SignInVC.swift */; };
+		53A8168821F8DC83000D9DED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A8168621F8DC83000D9DED /* Main.storyboard */; };
+		53A8168A21F8DC83000D9DED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53A8168921F8DC83000D9DED /* Assets.xcassets */; };
+		53A8168D21F8DC83000D9DED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A8168B21F8DC83000D9DED /* LaunchScreen.storyboard */; };
+		53A8169821F8DC83000D9DED /* UverBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A8169721F8DC83000D9DED /* UverBusTests.swift */; };
+		53A816A321F8DC83000D9DED /* UverBusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A816A221F8DC83000D9DED /* UverBusUITests.swift */; };
+		53A816B121F8E47D000D9DED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53A816B021F8E47D000D9DED /* GoogleService-Info.plist */; };
+		53C5ABCC21FEDE8F009531A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A8168621F8DC83000D9DED /* Main.storyboard */; };
+		53C5ABCD21FEDE8F009531A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A8168621F8DC83000D9DED /* Main.storyboard */; };
+		CE5C880EB3D7DD642D161735 /* Pods_UverBusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A34CB5EE65A499E0F17C59F /* Pods_UverBusUITests.framework */; };
+		E4DD929F7C609E7F8C3FCDA3 /* Pods_UverBusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9900477D9779EB448D5D99 /* Pods_UverBusTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		53A8169421F8DC83000D9DED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53A8167721F8DC82000D9DED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53A8167E21F8DC83000D9DED;
+			remoteInfo = UverBus;
+		};
+		53A8169F21F8DC83000D9DED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53A8167721F8DC82000D9DED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53A8167E21F8DC83000D9DED;
+			remoteInfo = UverBus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E91A2A4A00702709C917CA0 /* Pods-UverBus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UverBus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UverBus/Pods-UverBus.debug.xcconfig"; sourceTree = "<group>"; };
+		3D9900477D9779EB448D5D99 /* Pods_UverBusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UverBusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		530800C2220257E900925C33 /* userIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userIcon.png; sourceTree = "<group>"; };
+		530800C42202589600925C33 /* busIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = busIcon.png; sourceTree = "<group>"; };
+		530E6ED421FE88AC007EDF3B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		535EEF118ACC47C1E3C57B52 /* Pods-UverBusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UverBusTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UverBusTests/Pods-UverBusTests.release.xcconfig"; sourceTree = "<group>"; };
+		53A8167F21F8DC83000D9DED /* UverBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UverBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53A8168221F8DC83000D9DED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		53A8168421F8DC83000D9DED /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		53A8168721F8DC83000D9DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		53A8168921F8DC83000D9DED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53A8168C21F8DC83000D9DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		53A8168E21F8DC83000D9DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53A8169321F8DC83000D9DED /* UverBusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UverBusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53A8169721F8DC83000D9DED /* UverBusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UverBusTests.swift; sourceTree = "<group>"; };
+		53A8169921F8DC83000D9DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53A8169E21F8DC83000D9DED /* UverBusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UverBusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53A816A221F8DC83000D9DED /* UverBusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UverBusUITests.swift; sourceTree = "<group>"; };
+		53A816A421F8DC83000D9DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53A816B021F8E47D000D9DED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5A29A8AE31119F9A796651CB /* Pods-UverBusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UverBusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UverBusTests/Pods-UverBusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A34CB5EE65A499E0F17C59F /* Pods_UverBusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UverBusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F6AB52472E08AF03BCBAB03 /* Pods-UverBusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UverBusUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UverBusUITests/Pods-UverBusUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B38FD2FF60498AF1C79995DD /* Pods-UverBus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UverBus.release.xcconfig"; path = "Pods/Target Support Files/Pods-UverBus/Pods-UverBus.release.xcconfig"; sourceTree = "<group>"; };
+		ED32FFFAC4F0FF688DC44728 /* Pods_UverBus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UverBus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6E07635E6B36DB7AF490E03 /* Pods-UverBusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UverBusUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UverBusUITests/Pods-UverBusUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53A8167C21F8DC83000D9DED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B6EA7F1DDE3767F027842EF /* Pods_UverBus.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53A8169021F8DC83000D9DED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4DD929F7C609E7F8C3FCDA3 /* Pods_UverBusTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53A8169B21F8DC83000D9DED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5C880EB3D7DD642D161735 /* Pods_UverBusUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		530800BD21FFCB7600925C33 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				530800C42202589600925C33 /* busIcon.png */,
+				530800C2220257E900925C33 /* userIcon.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		5311317821FA400B00A0BF4D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				530E6ED421FE88AC007EDF3B /* HomeVC.swift */,
+				53A8168421F8DC83000D9DED /* SignInVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		53A8167621F8DC82000D9DED = {
+			isa = PBXGroup;
+			children = (
+				53A8168121F8DC83000D9DED /* UverBus */,
+				53A8169621F8DC83000D9DED /* UverBusTests */,
+				53A816A121F8DC83000D9DED /* UverBusUITests */,
+				53A8168021F8DC83000D9DED /* Products */,
+				54C4CF4A026608F9CF951EAD /* Pods */,
+				7C450015FFA78933733F1A85 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		53A8168021F8DC83000D9DED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53A8167F21F8DC83000D9DED /* UverBus.app */,
+				53A8169321F8DC83000D9DED /* UverBusTests.xctest */,
+				53A8169E21F8DC83000D9DED /* UverBusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53A8168121F8DC83000D9DED /* UverBus */ = {
+			isa = PBXGroup;
+			children = (
+				530800BD21FFCB7600925C33 /* Assets */,
+				5311317821FA400B00A0BF4D /* ViewControllers */,
+				53A816B021F8E47D000D9DED /* GoogleService-Info.plist */,
+				53A8168221F8DC83000D9DED /* AppDelegate.swift */,
+				53A8168621F8DC83000D9DED /* Main.storyboard */,
+				53A8168921F8DC83000D9DED /* Assets.xcassets */,
+				53A8168B21F8DC83000D9DED /* LaunchScreen.storyboard */,
+				53A8168E21F8DC83000D9DED /* Info.plist */,
+			);
+			path = UverBus;
+			sourceTree = "<group>";
+		};
+		53A8169621F8DC83000D9DED /* UverBusTests */ = {
+			isa = PBXGroup;
+			children = (
+				53A8169721F8DC83000D9DED /* UverBusTests.swift */,
+				53A8169921F8DC83000D9DED /* Info.plist */,
+			);
+			path = UverBusTests;
+			sourceTree = "<group>";
+		};
+		53A816A121F8DC83000D9DED /* UverBusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				53A816A221F8DC83000D9DED /* UverBusUITests.swift */,
+				53A816A421F8DC83000D9DED /* Info.plist */,
+			);
+			path = UverBusUITests;
+			sourceTree = "<group>";
+		};
+		54C4CF4A026608F9CF951EAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E91A2A4A00702709C917CA0 /* Pods-UverBus.debug.xcconfig */,
+				B38FD2FF60498AF1C79995DD /* Pods-UverBus.release.xcconfig */,
+				5A29A8AE31119F9A796651CB /* Pods-UverBusTests.debug.xcconfig */,
+				535EEF118ACC47C1E3C57B52 /* Pods-UverBusTests.release.xcconfig */,
+				F6E07635E6B36DB7AF490E03 /* Pods-UverBusUITests.debug.xcconfig */,
+				7F6AB52472E08AF03BCBAB03 /* Pods-UverBusUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7C450015FFA78933733F1A85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED32FFFAC4F0FF688DC44728 /* Pods_UverBus.framework */,
+				3D9900477D9779EB448D5D99 /* Pods_UverBusTests.framework */,
+				6A34CB5EE65A499E0F17C59F /* Pods_UverBusUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53A8167E21F8DC83000D9DED /* UverBus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53A816A721F8DC83000D9DED /* Build configuration list for PBXNativeTarget "UverBus" */;
+			buildPhases = (
+				2EEF7479D57B1E4363A79173 /* [CP] Check Pods Manifest.lock */,
+				53A8167B21F8DC83000D9DED /* Sources */,
+				53A8167C21F8DC83000D9DED /* Frameworks */,
+				53A8167D21F8DC83000D9DED /* Resources */,
+				004ECD5B2EF757D45D17E268 /* [CP] Embed Pods Frameworks */,
+				F6377FCA6579DF8429395364 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UverBus;
+			productName = UverBus;
+			productReference = 53A8167F21F8DC83000D9DED /* UverBus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		53A8169221F8DC83000D9DED /* UverBusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53A816AA21F8DC83000D9DED /* Build configuration list for PBXNativeTarget "UverBusTests" */;
+			buildPhases = (
+				AD5488A60EFDBFFEB26A4299 /* [CP] Check Pods Manifest.lock */,
+				53A8168F21F8DC83000D9DED /* Sources */,
+				53A8169021F8DC83000D9DED /* Frameworks */,
+				53A8169121F8DC83000D9DED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53A8169521F8DC83000D9DED /* PBXTargetDependency */,
+			);
+			name = UverBusTests;
+			productName = UverBusTests;
+			productReference = 53A8169321F8DC83000D9DED /* UverBusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		53A8169D21F8DC83000D9DED /* UverBusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53A816AD21F8DC83000D9DED /* Build configuration list for PBXNativeTarget "UverBusUITests" */;
+			buildPhases = (
+				A9940FD0F21276C39901006E /* [CP] Check Pods Manifest.lock */,
+				53A8169A21F8DC83000D9DED /* Sources */,
+				53A8169B21F8DC83000D9DED /* Frameworks */,
+				53A8169C21F8DC83000D9DED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53A816A021F8DC83000D9DED /* PBXTargetDependency */,
+			);
+			name = UverBusUITests;
+			productName = UverBusUITests;
+			productReference = 53A8169E21F8DC83000D9DED /* UverBusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53A8167721F8DC82000D9DED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = UverBus;
+				TargetAttributes = {
+					53A8167E21F8DC83000D9DED = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Automatic;
+					};
+					53A8169221F8DC83000D9DED = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 53A8167E21F8DC83000D9DED;
+					};
+					53A8169D21F8DC83000D9DED = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 53A8167E21F8DC83000D9DED;
+					};
+				};
+			};
+			buildConfigurationList = 53A8167A21F8DC82000D9DED /* Build configuration list for PBXProject "UverBus" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 53A8167621F8DC82000D9DED;
+			productRefGroup = 53A8168021F8DC83000D9DED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53A8167E21F8DC83000D9DED /* UverBus */,
+				53A8169221F8DC83000D9DED /* UverBusTests */,
+				53A8169D21F8DC83000D9DED /* UverBusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53A8167D21F8DC83000D9DED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53A8168D21F8DC83000D9DED /* LaunchScreen.storyboard in Resources */,
+				53A816B121F8E47D000D9DED /* GoogleService-Info.plist in Resources */,
+				530800C52202589600925C33 /* busIcon.png in Resources */,
+				530800C3220257E900925C33 /* userIcon.png in Resources */,
+				53A8168A21F8DC83000D9DED /* Assets.xcassets in Resources */,
+				53A8168821F8DC83000D9DED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53A8169121F8DC83000D9DED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53C5ABCC21FEDE8F009531A8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53A8169C21F8DC83000D9DED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53C5ABCD21FEDE8F009531A8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		004ECD5B2EF757D45D17E268 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UverBus/Pods-UverBus-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
+				"${BUILT_PRODUCTS_DIR}/MapboxCoreNavigation/MapboxCoreNavigation.framework",
+				"${BUILT_PRODUCTS_DIR}/MapboxDirections.swift/MapboxDirections.framework",
+				"${BUILT_PRODUCTS_DIR}/MapboxMobileEvents/MapboxMobileEvents.framework",
+				"${BUILT_PRODUCTS_DIR}/MapboxNavigation/MapboxNavigation.framework",
+				"${PODS_ROOT}/MapboxNavigationNative/MapboxNavigationNative.framework",
+				"${PODS_ROOT}/MapboxNavigationNative/MapboxNavigationNative.framework.dSYM",
+				"${BUILT_PRODUCTS_DIR}/MapboxSpeech/MapboxSpeech.framework",
+				"${BUILT_PRODUCTS_DIR}/Polyline/Polyline.framework",
+				"${BUILT_PRODUCTS_DIR}/Solar/Solar.framework",
+				"${BUILT_PRODUCTS_DIR}/Turf/Turf.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxCoreNavigation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxDirections.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxMobileEvents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxNavigation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxNavigationNative.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/MapboxNavigationNative.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxSpeech.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Polyline.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Solar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Turf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UverBus/Pods-UverBus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2EEF7479D57B1E4363A79173 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UverBus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9940FD0F21276C39901006E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UverBusUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD5488A60EFDBFFEB26A4299 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UverBusTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6377FCA6579DF8429395364 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UverBus/Pods-UverBus-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UverBus/Pods-UverBus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53A8167B21F8DC83000D9DED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				530E6ED521FE88AC007EDF3B /* HomeVC.swift in Sources */,
+				53A8168521F8DC83000D9DED /* SignInVC.swift in Sources */,
+				53A8168321F8DC83000D9DED /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53A8168F21F8DC83000D9DED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53A8169821F8DC83000D9DED /* UverBusTests.swift in Sources */,
+				530E6ED721FED620007EDF3B /* HomeVC.swift in Sources */,
+				530E6ED921FED62A007EDF3B /* SignInVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53A8169A21F8DC83000D9DED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53A816A321F8DC83000D9DED /* UverBusUITests.swift in Sources */,
+				530E6ED821FED621007EDF3B /* HomeVC.swift in Sources */,
+				530E6EDA21FED62A007EDF3B /* SignInVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53A8169521F8DC83000D9DED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53A8167E21F8DC83000D9DED /* UverBus */;
+			targetProxy = 53A8169421F8DC83000D9DED /* PBXContainerItemProxy */;
+		};
+		53A816A021F8DC83000D9DED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53A8167E21F8DC83000D9DED /* UverBus */;
+			targetProxy = 53A8169F21F8DC83000D9DED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		53A8168621F8DC83000D9DED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53A8168721F8DC83000D9DED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		53A8168B21F8DC83000D9DED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53A8168C21F8DC83000D9DED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53A816A521F8DC83000D9DED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		53A816A621F8DC83000D9DED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53A816A821F8DC83000D9DED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E91A2A4A00702709C917CA0 /* Pods-UverBus.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34HBNDS46Z;
+				INFOPLIST_FILE = UverBus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Scott.UverBus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		53A816A921F8DC83000D9DED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B38FD2FF60498AF1C79995DD /* Pods-UverBus.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34HBNDS46Z;
+				INFOPLIST_FILE = UverBus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Scott.UverBus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		53A816AB21F8DC83000D9DED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A29A8AE31119F9A796651CB /* Pods-UverBusTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34HBNDS46Z;
+				INFOPLIST_FILE = UverBusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Scott.UverBusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UverBus.app/UverBus";
+			};
+			name = Debug;
+		};
+		53A816AC21F8DC83000D9DED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 535EEF118ACC47C1E3C57B52 /* Pods-UverBusTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34HBNDS46Z;
+				INFOPLIST_FILE = UverBusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Scott.UverBusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UverBus.app/UverBus";
+			};
+			name = Release;
+		};
+		53A816AE21F8DC83000D9DED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6E07635E6B36DB7AF490E03 /* Pods-UverBusUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34HBNDS46Z;
+				INFOPLIST_FILE = UverBusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Scott.UverBusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UverBus;
+			};
+			name = Debug;
+		};
+		53A816AF21F8DC83000D9DED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F6AB52472E08AF03BCBAB03 /* Pods-UverBusUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34HBNDS46Z;
+				INFOPLIST_FILE = UverBusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Scott.UverBusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UverBus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53A8167A21F8DC82000D9DED /* Build configuration list for PBXProject "UverBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53A816A521F8DC83000D9DED /* Debug */,
+				53A816A621F8DC83000D9DED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53A816A721F8DC83000D9DED /* Build configuration list for PBXNativeTarget "UverBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53A816A821F8DC83000D9DED /* Debug */,
+				53A816A921F8DC83000D9DED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53A816AA21F8DC83000D9DED /* Build configuration list for PBXNativeTarget "UverBusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53A816AB21F8DC83000D9DED /* Debug */,
+				53A816AC21F8DC83000D9DED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53A816AD21F8DC83000D9DED /* Build configuration list for PBXNativeTarget "UverBusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53A816AE21F8DC83000D9DED /* Debug */,
+				53A816AF21F8DC83000D9DED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53A8167721F8DC82000D9DED /* Project object */;
+}
