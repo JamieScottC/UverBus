@@ -21,7 +21,7 @@ class SignInVC: UIViewController, GIDSignInUIDelegate {
     }
     override func viewDidAppear(_ animated: Bool) {
         //User already signed in, so skip sign in
-        if let alreadySignedIn = Auth.auth().currentUser {
+        if Auth.auth().currentUser != nil{
             performSegue(withIdentifier: "skipSignIn", sender: nil)
             
         }

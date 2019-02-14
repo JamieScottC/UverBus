@@ -13,13 +13,20 @@ import Firebase
 import FirebaseDatabase
 class HomeVC: UIViewController, MGLMapViewDelegate{
     //Globals
+    
     var ref: DatabaseReference!
+    
     @IBOutlet weak var mapView: MGLMapView!
+    
     var source: MGLShapeSource!
+    
     var timer = Timer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         ref = Database.database().reference()
+        
         // Create a new map view using the Mapbox Dark style.
         mapView.frame = view.bounds
         
@@ -34,12 +41,14 @@ class HomeVC: UIViewController, MGLMapViewDelegate{
         mapView.zoomLevel = 9
         mapView.delegate = self
     }
+    
     //When follow user button is clicked
     @IBAction func followUserClicked(_ sender: UIButton) {
         //Start tracking user again
         mapView.setUserTrackingMode(.follow, animated: true)
         
     }
+    
     //When the follow bus button is clicked
     @IBAction func followBusClicked(_ sender: UIButton) {
         //Find the bus coordinates in database
@@ -55,7 +64,12 @@ class HomeVC: UIViewController, MGLMapViewDelegate{
             //Set the maps camera to where the bus is
             let camera = MGLMapCamera(lookingAtCenter: coords, altitude: self.mapView.camera.altitude, pitch: self.mapView.camera.pitch, heading: self.mapView.camera.heading)
             self.mapView.fly(to: camera, completionHandler: nil)
+            
+
         })
+        var z = CLLocationCoordinate2D(60, 20)
+        var x = CLLocationCoordinate2D(30, 127)
+        console.log(calcETA(z, x));
     }
     
     func mapView(_ mapView: MGLMapView, didFinishLoading style: MGLStyle) {
@@ -79,7 +93,24 @@ class HomeVC: UIViewController, MGLMapViewDelegate{
         }
     }
     
-    func drawPolyline(){
+    func calcETA(to: CLLocationCoordinate2D, from: CLLocationCoordinate2D){
+        //URL to directions API
+        guard let gitUrl = URL(string: "https://api.mapbox.com/directions-matrix/v1/mapbox/driving/" + to.longitude + "," + to.latitude + ";" + from.longitude + "," + from.latitude + "?approaches=curb;curb;curb&access_token=pk.eyJ1IjoiamFtaWVzY290dGMiLCJhIjoiY2pyZ2pwc2tzMmxlNDN5cGdwamo0cXoyZCJ9.oYvpsFs_BmC85312NtD64Q") else { return }
+        //Retrieve data from url
+        URLSession.shared.dataTask(with: gitUrl) { (data, response
+            , error) in
+            guard let data = data else { return }
+            do {
+                //Parse json
+                let decoder = JSONDecoder()
+                let gitData = try decoder.decode(myDirections.self, from: data)
+                print(gitData.durations![0][1])
+                
+            } catch let err {
+                print("Err", err)
+            }
+            }.resume()
+        print("other rr")
         
         
     }
@@ -95,14 +126,10 @@ class HomeVC: UIViewController, MGLMapViewDelegate{
         timer = Timer()
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //Struct for duration json
+    struct myDirections: Codable{
+        var code: String?
+        var durations: [[Double]]?
     }
-    */
-
+    
 }

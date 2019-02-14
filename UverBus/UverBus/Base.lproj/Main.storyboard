@@ -44,38 +44,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P03-uT-FrZ">
-                                <rect key="frame" x="303" y="120" width="56" height="47"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="56" id="LdO-Wm-nTN"/>
-                                    <constraint firstAttribute="height" constant="47" id="arV-LR-PQL"/>
-                                </constraints>
-                                <state key="normal" title="Follow Bus" image="busIcon.png"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P03-uT-FrZ">
+                                <rect key="frame" x="317" y="120" width="42" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Follow Bus"/>
                                 <connections>
                                     <action selector="followBusClicked:" destination="Nxn-Zs-jVJ" eventType="touchUpInside" id="5Kk-iJ-HIy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ba9-PQ-Ujy">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ba9-PQ-Ujy">
                                 <rect key="frame" x="16" y="120" width="41" height="42"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="41" id="2Ru-Ao-Zeo"/>
-                                    <constraint firstAttribute="height" constant="42" id="V6h-Wc-IXK"/>
-                                </constraints>
-                                <state key="normal" title="Follow User" image="userIcon.png"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Follow User"/>
                                 <connections>
                                     <action selector="followUserClicked:" destination="Nxn-Zs-jVJ" eventType="touchUpInside" id="rAv-qh-0Pk"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="ba9-PQ-Ujy" firstAttribute="leading" secondItem="g7Z-ZT-oC6" secondAttribute="leadingMargin" id="5Uz-mQ-GqI"/>
-                            <constraint firstItem="P03-uT-FrZ" firstAttribute="top" secondItem="Vh2-ve-FTO" secondAttribute="top" constant="56" id="M52-5U-Cow"/>
-                            <constraint firstItem="P03-uT-FrZ" firstAttribute="trailing" secondItem="g7Z-ZT-oC6" secondAttribute="trailingMargin" id="SH1-wg-Fy3"/>
-                            <constraint firstItem="Vh2-ve-FTO" firstAttribute="bottom" secondItem="ba9-PQ-Ujy" secondAttribute="bottom" constant="505" id="SSe-CO-zEj"/>
-                            <constraint firstItem="P03-uT-FrZ" firstAttribute="top" secondItem="ba9-PQ-Ujy" secondAttribute="top" id="XQy-OH-mfO"/>
-                            <constraint firstItem="Vh2-ve-FTO" firstAttribute="bottom" secondItem="P03-uT-FrZ" secondAttribute="bottom" constant="500" id="dLh-NB-FOw"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Vh2-ve-FTO"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="a3x-nG-BcW"/>
@@ -105,8 +91,4 @@
             <point key="canvasLocation" x="-591" y="105"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="busIcon.png" width="512" height="512"/>
-        <image name="userIcon.png" width="512" height="512"/>
-    </resources>
 </document>
