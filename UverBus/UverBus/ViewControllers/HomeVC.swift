@@ -55,7 +55,6 @@ class HomeVC: UIViewController, MGLMapViewDelegate{
         ref.child("busLocation").child("geometry").observe(.value, with: {(snapshot ) in
             let value = snapshot.value as! NSDictionary
             let coordValues = value["coordinates"] as! NSArray
-            print(coordValues)
             let lat = coordValues[1] as! Double
             let long = coordValues[0] as! Double
             let coords = CLLocationCoordinate2DMake(lat, long)
@@ -67,9 +66,9 @@ class HomeVC: UIViewController, MGLMapViewDelegate{
             
 
         })
-        var z = CLLocationCoordinate2D(60, 20)
-        var x = CLLocationCoordinate2D(30, 127)
-        console.log(calcETA(z, x));
+        var z = CLLocationCoordinate2D(latitude: 60, longitude: 120)
+        var x = CLLocationCoordinate2D(latitude: 70, longitude: 133)
+        calcETA(to: z, from: x)
     }
     
     func mapView(_ mapView: MGLMapView, didFinishLoading style: MGLStyle) {
@@ -94,8 +93,17 @@ class HomeVC: UIViewController, MGLMapViewDelegate{
     }
     
     func calcETA(to: CLLocationCoordinate2D, from: CLLocationCoordinate2D){
+        print("tolong" + String(to.longitude))
         //URL to directions API
-        guard let gitUrl = URL(string: "https://api.mapbox.com/directions-matrix/v1/mapbox/driving/" + to.longitude + "," + to.latitude + ";" + from.longitude + "," + from.latitude + "?approaches=curb;curb;curb&access_token=pk.eyJ1IjoiamFtaWVzY290dGMiLCJhIjoiY2pyZ2pwc2tzMmxlNDN5cGdwamo0cXoyZCJ9.oYvpsFs_BmC85312NtD64Q") else { return }
+        let toLong = to.longitude
+        let toLat = to.latitude
+        let fromLong = from.longitude
+        let fromLat = from.latitude
+        
+        let urlStringA = "https://api.mapbox.com/directions-matrix/v1/mapbox/driving/" + String(toLong) + "," + String(toLat)
+        let urlStringB = ";" + String(fromLong) + "," + String(fromLat) + "?approaches=curb;curb&access_token=pk.eyJ1IjoiamFtaWVzY290dGMiLCJhIjoiY2pyZ2pwc2tzMmxlNDN5cGdwamo0cXoyZCJ9.oYvpsFs_BmC85312NtD64Q"
+        guard let gitUrl = URL(string: urlStringA + urlStringB)
+        else { return }
         //Retrieve data from url
         URLSession.shared.dataTask(with: gitUrl) { (data, response
             , error) in
@@ -104,6 +112,7 @@ class HomeVC: UIViewController, MGLMapViewDelegate{
                 //Parse json
                 let decoder = JSONDecoder()
                 let gitData = try decoder.decode(myDirections.self, from: data)
+                print("run")
                 print(gitData.durations![0][1])
                 
             } catch let err {
