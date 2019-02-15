@@ -11,8 +11,13 @@ import CoreLocation
 import Mapbox
 import Firebase
 import FirebaseDatabase
-class HomeVC: UIViewController, MGLMapViewDelegate{
+import CoreLocation
+import MapKit
+class HomeVC: UIViewController, MGLMapViewDelegate, CLLocationManagerDelegate{
     //Globals
+    let locationManager = CLLocationManager()
+    
+    var userLocation: CLLocationCoordinate2D
     
     var ref: DatabaseReference!
     
@@ -24,6 +29,18 @@ class HomeVC: UIViewController, MGLMapViewDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Location stuff...
+        // Ask for Authorisation from the User.
+        self.locationManager.requestAlwaysAuthorization()
+        
+        // For use in foreground
+        self.locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
         
         ref = Database.database().reference()
         
@@ -40,6 +57,11 @@ class HomeVC: UIViewController, MGLMapViewDelegate{
         // Set the map view‘s delegate property and zoom level
         mapView.zoomLevel = 9
         mapView.delegate = self
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
+        userLocation = locValue
     }
     
     //When follow user button is clicked
@@ -66,9 +88,7 @@ class HomeVC: UIViewController, MGLMapViewDelegate{
             
 
         })
-        var z = CLLocationCoordinate2D(latitude: 60, longitude: 120)
-        var x = CLLocationCoordinate2D(latitude: 70, longitude: 133)
-        calcETA(to: z, from: x)
+        
     }
     
     func mapView(_ mapView: MGLMapView, didFinishLoading style: MGLStyle) {
@@ -93,13 +113,13 @@ class HomeVC: UIViewController, MGLMapViewDelegate{
     }
     
     func calcETA(to: CLLocationCoordinate2D, from: CLLocationCoordinate2D){
-        print("tolong" + String(to.longitude))
         //URL to directions API
         let toLong = to.longitude
         let toLat = to.latitude
         let fromLong = from.longitude
         let fromLat = from.latitude
-        
+        print("long" + String(fromLong))
+        print("lat" + String(fromLat))
         let urlStringA = "https://api.mapbox.com/directions-matrix/v1/mapbox/driving/" + String(toLong) + "," + String(toLat)
         let urlStringB = ";" + String(fromLong) + "," + String(fromLat) + "?approaches=curb;curb&access_token=pk.eyJ1IjoiamFtaWVzY290dGMiLCJhIjoiY2pyZ2pwc2tzMmxlNDN5cGdwamo0cXoyZCJ9.oYvpsFs_BmC85312NtD64Q"
         guard let gitUrl = URL(string: urlStringA + urlStringB)
@@ -112,14 +132,14 @@ class HomeVC: UIViewController, MGLMapViewDelegate{
                 //Parse json
                 let decoder = JSONDecoder()
                 let gitData = try decoder.decode(myDirections.self, from: data)
-                print("run")
+                print("website: " + urlStringA + urlStringB)
                 print(gitData.durations![0][1])
                 
             } catch let err {
                 print("Err", err)
             }
             }.resume()
-        print("other rr")
+        //print("other rr")
         
         
     }
@@ -127,6 +147,18 @@ class HomeVC: UIViewController, MGLMapViewDelegate{
     @objc func updateUrl() {
         // Update the icon's position by setting the `url` property on the source.
         source.url = source.url
+        //Also lets update the ETA while we're at it
+        ref.child("busLocation").child("geometry").observe(.value, with: {(snapshot ) in
+            let value = snapshot.value as! NSDictionary
+            let coordValues = value["coordinates"] as! NSArray
+            let lat = coordValues[1] as! Double
+            let long = coordValues[0] as! Double
+            
+            let busLocation = CLLocationCoordinate2D(latitude: lat, longitude: long)
+            self.calcETA(to: self.userLocation, from: busLocation)
+
+            
+        })
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -134,7 +166,8 @@ class HomeVC: UIViewController, MGLMapViewDelegate{
         timer.invalidate()
         timer = Timer()
     }
-
+    
+    
     //Struct for duration json
     struct myDirections: Codable{
         var code: String?
