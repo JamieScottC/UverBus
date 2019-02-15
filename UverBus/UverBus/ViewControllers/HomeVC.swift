@@ -17,7 +17,7 @@ class HomeVC: UIViewController, MGLMapViewDelegate, CLLocationManagerDelegate{
     //Globals
     let locationManager = CLLocationManager()
     
-    var userLocation: CLLocationCoordinate2D
+    var userLocation: CLLocationCoordinate2D!
     
     var ref: DatabaseReference!
     
