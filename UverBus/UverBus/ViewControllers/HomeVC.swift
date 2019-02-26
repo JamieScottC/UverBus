@@ -21,7 +21,11 @@ class HomeVC: UIViewController, MGLMapViewDelegate, CLLocationManagerDelegate{
     
     var ref: DatabaseReference!
     
+    var etaDuration: Double!
+    
     @IBOutlet weak var mapView: MGLMapView!
+    
+    @IBOutlet weak var etaLabel: UILabel!
     
     var source: MGLShapeSource!
     
@@ -133,8 +137,8 @@ class HomeVC: UIViewController, MGLMapViewDelegate, CLLocationManagerDelegate{
                 let decoder = JSONDecoder()
                 let gitData = try decoder.decode(myDirections.self, from: data)
                 print("website: " + urlStringA + urlStringB)
+                self.updateEtaLabel(duration: gitData.durations![0][1])
                 print(gitData.durations![0][1])
-                
             } catch let err {
                 print("Err", err)
             }
@@ -143,7 +147,9 @@ class HomeVC: UIViewController, MGLMapViewDelegate, CLLocationManagerDelegate{
         
         
     }
-    
+    func updateEtaLabel(duration: Double){
+        etaLabel.text = "ETA: " + String(duration)
+    }
     @objc func updateUrl() {
         // Update the icon's position by setting the `url` property on the source.
         source.url = source.url
@@ -156,7 +162,6 @@ class HomeVC: UIViewController, MGLMapViewDelegate, CLLocationManagerDelegate{
             
             let busLocation = CLLocationCoordinate2D(latitude: lat, longitude: long)
             self.calcETA(to: self.userLocation, from: busLocation)
-
             
         })
     }

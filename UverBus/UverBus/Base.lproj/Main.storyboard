@@ -60,12 +60,20 @@
                                     <action selector="followUserClicked:" destination="Nxn-Zs-jVJ" eventType="touchUpInside" id="rAv-qh-0Pk"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ETA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1KY-pQ-jPT">
+                                <rect key="frame" x="31" y="597" width="145" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Vh2-ve-FTO"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="a3x-nG-BcW"/>
                     <connections>
+                        <outlet property="etaLabel" destination="1KY-pQ-jPT" id="Odb-e5-9SZ"/>
                         <outlet property="mapView" destination="g7Z-ZT-oC6" id="Suk-6m-bRE"/>
                     </connections>
                 </viewController>
