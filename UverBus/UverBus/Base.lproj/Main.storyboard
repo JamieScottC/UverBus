@@ -44,36 +44,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P03-uT-FrZ">
-                                <rect key="frame" x="272" y="120" width="87" height="34"/>
-                                <state key="normal" title="Follow Bus"/>
-                                <connections>
-                                    <action selector="followBusClicked:" destination="Nxn-Zs-jVJ" eventType="touchUpInside" id="5Kk-iJ-HIy"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ba9-PQ-Ujy">
-                                <rect key="frame" x="16" y="120" width="95" height="34"/>
-                                <state key="normal" title="Follow User"/>
-                                <connections>
-                                    <action selector="followUserClicked:" destination="Nxn-Zs-jVJ" eventType="touchUpInside" id="rAv-qh-0Pk"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ETA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1KY-pQ-jPT">
-                                <rect key="frame" x="31" y="597" width="119" height="21"/>
+                                <rect key="frame" x="31" y="597.5" width="119" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="175" translatesAutoresizingMaskIntoConstraints="NO" id="Bgz-ai-irD">
+                                <rect key="frame" x="50" y="84" width="275" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ba9-PQ-Ujy">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="WBe-mO-6id"/>
+                                            <constraint firstAttribute="height" constant="50" id="xS0-26-1aA"/>
+                                        </constraints>
+                                        <state key="normal" title="Follow User" image="userIcon.png"/>
+                                        <connections>
+                                            <action selector="followUserClicked:" destination="Nxn-Zs-jVJ" eventType="touchUpInside" id="rAv-qh-0Pk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P03-uT-FrZ">
+                                        <rect key="frame" x="225" y="0.0" width="50" height="50"/>
+                                        <state key="normal" title="Follow Bus" image="busIcon.png"/>
+                                        <connections>
+                                            <action selector="followBusClicked:" destination="Nxn-Zs-jVJ" eventType="touchUpInside" id="5Kk-iJ-HIy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="P03-uT-FrZ" firstAttribute="top" secondItem="Vh2-ve-FTO" secondAttribute="top" constant="56" id="5gt-gG-3IC"/>
-                            <constraint firstItem="ba9-PQ-Ujy" firstAttribute="top" secondItem="Vh2-ve-FTO" secondAttribute="top" constant="56" id="69b-tC-s4F"/>
-                            <constraint firstItem="P03-uT-FrZ" firstAttribute="leading" secondItem="ba9-PQ-Ujy" secondAttribute="trailing" constant="161" id="7Ha-HF-V0C"/>
-                            <constraint firstItem="Vh2-ve-FTO" firstAttribute="bottom" secondItem="P03-uT-FrZ" secondAttribute="bottom" constant="513" id="Az2-GL-bKL"/>
+                            <constraint firstItem="Bgz-ai-irD" firstAttribute="top" secondItem="Vh2-ve-FTO" secondAttribute="top" constant="20" id="Gbt-w8-2rb"/>
+                            <constraint firstItem="Bgz-ai-irD" firstAttribute="leading" secondItem="Vh2-ve-FTO" secondAttribute="leading" constant="50" id="GtF-9m-cwc"/>
                             <constraint firstItem="1KY-pQ-jPT" firstAttribute="leading" secondItem="Vh2-ve-FTO" secondAttribute="leading" constant="31" id="eaY-4i-9ZA"/>
-                            <constraint firstItem="ba9-PQ-Ujy" firstAttribute="leading" secondItem="Vh2-ve-FTO" secondAttribute="leading" constant="16" id="nOv-14-W89"/>
-                            <constraint firstItem="Vh2-ve-FTO" firstAttribute="trailing" secondItem="P03-uT-FrZ" secondAttribute="trailing" constant="16" id="ptM-rq-T5c"/>
                             <constraint firstItem="Vh2-ve-FTO" firstAttribute="bottom" secondItem="1KY-pQ-jPT" secondAttribute="bottom" constant="49" id="wSV-I2-fVn"/>
                             <constraint firstItem="Vh2-ve-FTO" firstAttribute="trailing" secondItem="1KY-pQ-jPT" secondAttribute="trailing" constant="225" id="whP-uP-Qgn"/>
                         </constraints>
@@ -107,4 +112,8 @@
             <point key="canvasLocation" x="-591" y="105"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="busIcon.png" width="512" height="512"/>
+        <image name="userIcon.png" width="512" height="512"/>
+    </resources>
 </document>

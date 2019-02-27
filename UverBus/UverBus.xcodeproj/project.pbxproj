@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0B6EA7F1DDE3767F027842EF /* Pods_UverBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED32FFFAC4F0FF688DC44728 /* Pods_UverBus.framework */; };
 		530800C3220257E900925C33 /* userIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 530800C2220257E900925C33 /* userIcon.png */; };
-		530800C52202589600925C33 /* busIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 530800C42202589600925C33 /* busIcon.png */; };
 		530E6ED521FE88AC007EDF3B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530E6ED421FE88AC007EDF3B /* HomeVC.swift */; };
 		530E6ED721FED620007EDF3B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530E6ED421FE88AC007EDF3B /* HomeVC.swift */; };
 		530E6ED821FED621007EDF3B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530E6ED421FE88AC007EDF3B /* HomeVC.swift */; };
@@ -25,6 +24,8 @@
 		53A816B121F8E47D000D9DED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53A816B021F8E47D000D9DED /* GoogleService-Info.plist */; };
 		53C5ABCC21FEDE8F009531A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A8168621F8DC83000D9DED /* Main.storyboard */; };
 		53C5ABCD21FEDE8F009531A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A8168621F8DC83000D9DED /* Main.storyboard */; };
+		53E9BB9F222705CC00A3B211 /* busIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 53E9BB9E222705CC00A3B211 /* busIcon.png */; };
+		53E9BBA12227065100A3B211 /* followBus.png in Resources */ = {isa = PBXBuildFile; fileRef = 53E9BBA02227065100A3B211 /* followBus.png */; };
 		CE5C880EB3D7DD642D161735 /* Pods_UverBusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A34CB5EE65A499E0F17C59F /* Pods_UverBusUITests.framework */; };
 		E4DD929F7C609E7F8C3FCDA3 /* Pods_UverBusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9900477D9779EB448D5D99 /* Pods_UverBusTests.framework */; };
 /* End PBXBuildFile section */
@@ -50,7 +51,6 @@
 		2E91A2A4A00702709C917CA0 /* Pods-UverBus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UverBus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UverBus/Pods-UverBus.debug.xcconfig"; sourceTree = "<group>"; };
 		3D9900477D9779EB448D5D99 /* Pods_UverBusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UverBusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		530800C2220257E900925C33 /* userIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userIcon.png; sourceTree = "<group>"; };
-		530800C42202589600925C33 /* busIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = busIcon.png; sourceTree = "<group>"; };
 		530E6ED421FE88AC007EDF3B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		535EEF118ACC47C1E3C57B52 /* Pods-UverBusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UverBusTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UverBusTests/Pods-UverBusTests.release.xcconfig"; sourceTree = "<group>"; };
 		53A8167F21F8DC83000D9DED /* UverBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UverBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +67,8 @@
 		53A816A221F8DC83000D9DED /* UverBusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UverBusUITests.swift; sourceTree = "<group>"; };
 		53A816A421F8DC83000D9DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53A816B021F8E47D000D9DED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		53E9BB9E222705CC00A3B211 /* busIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = busIcon.png; sourceTree = "<group>"; };
+		53E9BBA02227065100A3B211 /* followBus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = followBus.png; sourceTree = "<group>"; };
 		5A29A8AE31119F9A796651CB /* Pods-UverBusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UverBusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UverBusTests/Pods-UverBusTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A34CB5EE65A499E0F17C59F /* Pods_UverBusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UverBusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F6AB52472E08AF03BCBAB03 /* Pods-UverBusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UverBusUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UverBusUITests/Pods-UverBusUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,7 +108,8 @@
 		530800BD21FFCB7600925C33 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				530800C42202589600925C33 /* busIcon.png */,
+				53E9BB9E222705CC00A3B211 /* busIcon.png */,
+				53E9BBA02227065100A3B211 /* followBus.png */,
 				530800C2220257E900925C33 /* userIcon.png */,
 			);
 			path = Assets;
@@ -315,8 +318,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				53A8168D21F8DC83000D9DED /* LaunchScreen.storyboard in Resources */,
+				53E9BB9F222705CC00A3B211 /* busIcon.png in Resources */,
+				53E9BBA12227065100A3B211 /* followBus.png in Resources */,
 				53A816B121F8E47D000D9DED /* GoogleService-Info.plist in Resources */,
-				530800C52202589600925C33 /* busIcon.png in Resources */,
 				530800C3220257E900925C33 /* userIcon.png in Resources */,
 				53A8168A21F8DC83000D9DED /* Assets.xcassets in Resources */,
 				53A8168821F8DC83000D9DED /* Main.storyboard in Resources */,
