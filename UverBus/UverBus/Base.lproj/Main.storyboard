@@ -44,31 +44,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P03-uT-FrZ">
-                                <rect key="frame" x="317" y="120" width="42" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P03-uT-FrZ">
+                                <rect key="frame" x="272" y="120" width="87" height="34"/>
                                 <state key="normal" title="Follow Bus"/>
                                 <connections>
                                     <action selector="followBusClicked:" destination="Nxn-Zs-jVJ" eventType="touchUpInside" id="5Kk-iJ-HIy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ba9-PQ-Ujy">
-                                <rect key="frame" x="16" y="120" width="41" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ba9-PQ-Ujy">
+                                <rect key="frame" x="16" y="120" width="95" height="34"/>
                                 <state key="normal" title="Follow User"/>
                                 <connections>
                                     <action selector="followUserClicked:" destination="Nxn-Zs-jVJ" eventType="touchUpInside" id="rAv-qh-0Pk"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ETA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1KY-pQ-jPT">
-                                <rect key="frame" x="31" y="597" width="145" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ETA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1KY-pQ-jPT">
+                                <rect key="frame" x="31" y="597" width="119" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="P03-uT-FrZ" firstAttribute="top" secondItem="Vh2-ve-FTO" secondAttribute="top" constant="56" id="5gt-gG-3IC"/>
+                            <constraint firstItem="ba9-PQ-Ujy" firstAttribute="top" secondItem="Vh2-ve-FTO" secondAttribute="top" constant="56" id="69b-tC-s4F"/>
+                            <constraint firstItem="P03-uT-FrZ" firstAttribute="leading" secondItem="ba9-PQ-Ujy" secondAttribute="trailing" constant="161" id="7Ha-HF-V0C"/>
+                            <constraint firstItem="Vh2-ve-FTO" firstAttribute="bottom" secondItem="P03-uT-FrZ" secondAttribute="bottom" constant="513" id="Az2-GL-bKL"/>
+                            <constraint firstItem="1KY-pQ-jPT" firstAttribute="leading" secondItem="Vh2-ve-FTO" secondAttribute="leading" constant="31" id="eaY-4i-9ZA"/>
+                            <constraint firstItem="ba9-PQ-Ujy" firstAttribute="leading" secondItem="Vh2-ve-FTO" secondAttribute="leading" constant="16" id="nOv-14-W89"/>
+                            <constraint firstItem="Vh2-ve-FTO" firstAttribute="trailing" secondItem="P03-uT-FrZ" secondAttribute="trailing" constant="16" id="ptM-rq-T5c"/>
+                            <constraint firstItem="Vh2-ve-FTO" firstAttribute="bottom" secondItem="1KY-pQ-jPT" secondAttribute="bottom" constant="49" id="wSV-I2-fVn"/>
+                            <constraint firstItem="Vh2-ve-FTO" firstAttribute="trailing" secondItem="1KY-pQ-jPT" secondAttribute="trailing" constant="225" id="whP-uP-Qgn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Vh2-ve-FTO"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="a3x-nG-BcW"/>

@@ -90,7 +90,6 @@ class HomeVC: UIViewController, MGLMapViewDelegate, CLLocationManagerDelegate{
             let camera = MGLMapCamera(lookingAtCenter: coords, altitude: self.mapView.camera.altitude, pitch: self.mapView.camera.pitch, heading: self.mapView.camera.heading)
             self.mapView.fly(to: camera, completionHandler: nil)
             
-
         })
         
     }
@@ -112,7 +111,7 @@ class HomeVC: UIViewController, MGLMapViewDelegate, CLLocationManagerDelegate{
             
             // Create a timer that calls the `updateUrl` function every 1.5 seconds.
             timer.invalidate()
-            timer = Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(updateUrl), userInfo: nil, repeats: true)
+            timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(updateUrl), userInfo: nil, repeats: true)
         }
     }
     
@@ -138,7 +137,6 @@ class HomeVC: UIViewController, MGLMapViewDelegate, CLLocationManagerDelegate{
                 let gitData = try decoder.decode(myDirections.self, from: data)
                 print("website: " + urlStringA + urlStringB)
                 self.updateEtaLabel(duration: gitData.durations![0][1])
-                print(gitData.durations![0][1])
             } catch let err {
                 print("Err", err)
             }
@@ -148,7 +146,12 @@ class HomeVC: UIViewController, MGLMapViewDelegate, CLLocationManagerDelegate{
         
     }
     func updateEtaLabel(duration: Double){
-        etaLabel.text = "ETA: " + String(duration)
+        DispatchQueue.main.async {
+            // Update UI
+            print("Updating the eta label: " + String(duration))
+            self.etaLabel.text = "ETA: " + String(duration)
+        }
+        
     }
     @objc func updateUrl() {
         // Update the icon's position by setting the `url` property on the source.
