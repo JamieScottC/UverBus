@@ -51,7 +51,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="175" translatesAutoresizingMaskIntoConstraints="NO" id="Bgz-ai-irD">
-                                <rect key="frame" x="50" y="84" width="275" height="50"/>
+                                <rect key="frame" x="50" y="527.5" width="275" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ba9-PQ-Ujy">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -76,9 +76,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Bgz-ai-irD" firstAttribute="top" secondItem="Vh2-ve-FTO" secondAttribute="top" constant="20" id="Gbt-w8-2rb"/>
                             <constraint firstItem="Bgz-ai-irD" firstAttribute="leading" secondItem="Vh2-ve-FTO" secondAttribute="leading" constant="50" id="GtF-9m-cwc"/>
+                            <constraint firstItem="1KY-pQ-jPT" firstAttribute="top" secondItem="Bgz-ai-irD" secondAttribute="bottom" constant="20" id="R6c-kb-ZmC"/>
                             <constraint firstItem="1KY-pQ-jPT" firstAttribute="leading" secondItem="Vh2-ve-FTO" secondAttribute="leading" constant="31" id="eaY-4i-9ZA"/>
+                            <constraint firstItem="Vh2-ve-FTO" firstAttribute="trailing" secondItem="Bgz-ai-irD" secondAttribute="trailing" constant="50" id="fmE-vU-9IA"/>
                             <constraint firstItem="Vh2-ve-FTO" firstAttribute="bottom" secondItem="1KY-pQ-jPT" secondAttribute="bottom" constant="49" id="wSV-I2-fVn"/>
                             <constraint firstItem="Vh2-ve-FTO" firstAttribute="trailing" secondItem="1KY-pQ-jPT" secondAttribute="trailing" constant="225" id="whP-uP-Qgn"/>
                         </constraints>
