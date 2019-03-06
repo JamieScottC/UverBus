@@ -31,6 +31,7 @@ class HomeVC: UIViewController, MGLMapViewDelegate, CLLocationManagerDelegate{
     
     var timer = Timer()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //Location stuff...
@@ -172,9 +173,10 @@ class HomeVC: UIViewController, MGLMapViewDelegate, CLLocationManagerDelegate{
     override func viewWillDisappear(_ animated: Bool) {
         // Invalidate the timer if the view will disappear.
         timer.invalidate()
-        timer = Timer()
     }
-    
+    @IBAction func mockClick(_ sender: Any) {
+        timer.invalidate()
+    }
     
     //Struct for duration json
     struct myDirections: Codable{
