@@ -14,6 +14,7 @@
 		530E6ED821FED621007EDF3B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530E6ED421FE88AC007EDF3B /* HomeVC.swift */; };
 		530E6ED921FED62A007EDF3B /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A8168421F8DC83000D9DED /* SignInVC.swift */; };
 		530E6EDA21FED62A007EDF3B /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A8168421F8DC83000D9DED /* SignInVC.swift */; };
+		536009DB2230411700C3402E /* PrototypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536009DA2230411700C3402E /* PrototypeVC.swift */; };
 		53A8168321F8DC83000D9DED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A8168221F8DC83000D9DED /* AppDelegate.swift */; };
 		53A8168521F8DC83000D9DED /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A8168421F8DC83000D9DED /* SignInVC.swift */; };
 		53A8168821F8DC83000D9DED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A8168621F8DC83000D9DED /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 		530800C2220257E900925C33 /* userIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userIcon.png; sourceTree = "<group>"; };
 		530E6ED421FE88AC007EDF3B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		535EEF118ACC47C1E3C57B52 /* Pods-UverBusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UverBusTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UverBusTests/Pods-UverBusTests.release.xcconfig"; sourceTree = "<group>"; };
+		536009DA2230411700C3402E /* PrototypeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeVC.swift; sourceTree = "<group>"; };
 		53A8167F21F8DC83000D9DED /* UverBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UverBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A8168221F8DC83000D9DED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53A8168421F8DC83000D9DED /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				530E6ED421FE88AC007EDF3B /* HomeVC.swift */,
 				53A8168421F8DC83000D9DED /* SignInVC.swift */,
 				53E9BBA2222854B700A3B211 /* MockGpsVC.swift */,
+				536009DA2230411700C3402E /* PrototypeVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -499,6 +502,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				530E6ED521FE88AC007EDF3B /* HomeVC.swift in Sources */,
+				536009DB2230411700C3402E /* PrototypeVC.swift in Sources */,
 				53A8168521F8DC83000D9DED /* SignInVC.swift in Sources */,
 				53A8168321F8DC83000D9DED /* AppDelegate.swift in Sources */,
 				53E9BBA3222854B700A3B211 /* MockGpsVC.swift in Sources */,
