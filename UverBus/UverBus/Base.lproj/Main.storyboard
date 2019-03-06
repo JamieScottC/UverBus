@@ -95,13 +95,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Vh2-ve-FTO"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="a3x-nG-BcW">
-                        <barButtonItem key="leftBarButtonItem" title="Mock GPS" id="Phh-pK-fd7">
-                            <connections>
-                                <action selector="mockClick:" destination="Nxn-Zs-jVJ" id="8aK-x8-Zo9"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Home" id="a3x-nG-BcW"/>
                     <connections>
                         <outlet property="etaLabel" destination="1KY-pQ-jPT" id="Odb-e5-9SZ"/>
                         <outlet property="mapView" destination="g7Z-ZT-oC6" id="Suk-6m-bRE"/>
@@ -160,11 +154,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwE-5S-RNL">
-                                <rect key="frame" x="112" y="157" width="30" height="30"/>
+                                <rect key="frame" x="247" y="104" width="112" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Map"/>
                                 <connections>
-                                    <segue destination="Nxn-Zs-jVJ" kind="show" id="Klc-S0-rVg"/>
+                                    <segue destination="Nxn-Zs-jVJ" kind="push" id="Klc-S0-rVg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -175,7 +169,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RZs-Dq-gBF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="418" y="134"/>
+            <point key="canvasLocation" x="416.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
     <resources>

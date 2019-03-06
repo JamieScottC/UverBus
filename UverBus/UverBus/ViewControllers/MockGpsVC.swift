@@ -46,7 +46,7 @@ class MockGpsVC: UIViewController, CLLocationManagerDelegate {
    @objc func sendCoords(){
     print("GPS: " + String(userLocation.latitude))
         ref.child("busLocation").child("geometry").child("coordinates").child("0").setValue(userLocation.longitude)
-        ref.child("busLocation").child("geometry").child("coordinates").child("0").setValue(userLocation.latitude)
+        ref.child("busLocation").child("geometry").child("coordinates").child("1").setValue(userLocation.latitude)
     }
     
 
