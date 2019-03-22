@@ -78,9 +78,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="P03-uT-FrZ" secondAttribute="bottom" id="SMR-Ze-5TA"/>
-                                    <constraint firstItem="ba9-PQ-Ujy" firstAttribute="leading" secondItem="Bgz-ai-irD" secondAttribute="leading" constant="10" id="UEt-dF-Bl7"/>
                                     <constraint firstAttribute="bottom" secondItem="ba9-PQ-Ujy" secondAttribute="bottom" id="Wht-sK-s5v"/>
-                                    <constraint firstAttribute="trailing" secondItem="P03-uT-FrZ" secondAttribute="trailing" constant="10" id="c8X-tV-f3i"/>
                                 </constraints>
                             </stackView>
                         </subviews>
